@@ -1,0 +1,54 @@
+# Python e ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Ferramentas de desenvolvimento e testes
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pdm-build/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Dados e bancos locais
+data/
+raw/
+*.sqlite3
+*.db
+*.db-journal
+
+# Airflow e execução local
+logs/
+*.log
+*.pid
+*.tmp
+
+# Documentação gerada
+site/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE e sistema operacional
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

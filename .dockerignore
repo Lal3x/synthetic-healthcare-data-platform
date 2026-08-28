@@ -1,0 +1,54 @@
+# Controle de versão e automações
+.git/
+.github/
+.gitignore
+
+# Ambiente local e segredos
+.env
+.env.*
+.python-version
+.venv/
+venv/
+env/
+ENV/
+
+# Caches e artefatos Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pdm-build/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+dist/
+build/
+
+# Conteúdo que não entra nas imagens
+config/
+dags/
+data/
+docs/
+logs/
+notebooks/
+plugins/
+site/
+sql/
+tests/
+mkdocs.yml
+poetry.lock
+
+# Arquivos locais diversos
+.idea/
+.vscode/
+.ipynb_checkpoints/
+*.log
+*.pid
+*.tmp
+.DS_Store
+Thumbs.db

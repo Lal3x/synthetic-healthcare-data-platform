@@ -1,0 +1,17 @@
+FROM python:3.13-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /opt/healthcare-analytics
+
+COPY pyproject.toml README.md ./
+COPY src ./src
+
+RUN pip install --no-cache-dir .
+
+COPY app ./app
+
+EXPOSE 8501
+
+CMD ["streamlit", "run", "app/streamlit_app.py", "--server.address=0.0.0.0", "--server.port=8501"]

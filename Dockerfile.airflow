@@ -1,0 +1,8 @@
+ARG AIRFLOW_BASE_IMAGE=apache/airflow:3.1.7
+FROM ${AIRFLOW_BASE_IMAGE}
+
+# O Airflow já fornece SQLAlchemy e Pandas em versões compatíveis com seus providers.
+RUN pip install --no-cache-dir \
+    "apache-airflow==3.1.7" \
+    "psycopg2-binary>=2.9.12,<3.0.0" \
+    "python-dotenv>=1.2.2,<2.0.0"

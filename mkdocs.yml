@@ -1,0 +1,57 @@
+site_name: Synthetic Healthcare Data Platform
+site_description: Documentação do projeto de simulação de pipeline de dados com SQL e Python
+site_author: Lucas Alexandre
+site_url: null
+repo_url: https://github.com/Lal3x/synthetic-healthcare-data-platform
+repo_name: Lal3x/synthetic-healthcare-data-platform
+
+nav:
+  - Início: index.md
+  - Visão Geral: arquitetura.md
+  - Estrutura do Projeto: estrutura.md
+  - Instalação e Execução: instalacao.md
+  - Pipeline: pipeline.md
+  - Testes e Cobertura: testes.md
+  - Dados e Privacidade: privacidade.md
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Modo claro
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Modo escuro
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+extra:
+  social: []
