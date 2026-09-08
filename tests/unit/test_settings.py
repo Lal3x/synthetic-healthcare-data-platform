@@ -38,4 +38,7 @@ def test_get_database_url_monta_url_com_variaveis_separadas(monkeypatch):
 
     result = settings.get_database_url()
 
-    assert result == "postgresql+psycopg2://usuario:senha@postgres-app:5432/healthcare_analytics"
+    assert (
+        result
+        == "postgresql+psycopg2://usuario:senha@postgres-app:5432/healthcare_analytics"
+    )

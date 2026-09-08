@@ -1,7 +1,7 @@
 site_name: Synthetic Healthcare Data Platform
 site_description: Documentação do projeto de simulação de pipeline de dados com SQL e Python
 site_author: Lucas Alexandre
-site_url: null
+site_url: https://lal3x.github.io/synthetic-healthcare-data-platform/
 repo_url: https://github.com/Lal3x/synthetic-healthcare-data-platform
 repo_name: Lal3x/synthetic-healthcare-data-platform
 

@@ -32,11 +32,17 @@ def get_database_url() -> str:
 
     url = URL.create(
         drivername="postgresql+psycopg2",
-        username=get_env_var("APP_DB_USER", obrigatoria=False, default="healthcare_analytics"),
-        password=get_env_var("APP_DB_PASSWORD", obrigatoria=False, default="healthcare_analytics"),
+        username=get_env_var(
+            "APP_DB_USER", obrigatoria=False, default="healthcare_analytics"
+        ),
+        password=get_env_var(
+            "APP_DB_PASSWORD", obrigatoria=False, default="healthcare_analytics"
+        ),
         host=get_env_var("APP_DB_HOST", obrigatoria=False, default="localhost"),
         port=int(get_env_var("APP_DB_PORT", obrigatoria=False, default="5432")),
-        database=get_env_var("APP_DB_NAME", obrigatoria=False, default="healthcare_analytics"),
+        database=get_env_var(
+            "APP_DB_NAME", obrigatoria=False, default="healthcare_analytics"
+        ),
     )
 
     return url.render_as_string(hide_password=False)
